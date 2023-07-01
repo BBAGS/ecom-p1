@@ -7,7 +7,7 @@ export default function Navbar(props: INavbarProps) {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl">Lentera Star</a>
       </div>
       <div className="flex-none">
         <SwitchTheme />
@@ -50,7 +50,7 @@ export default function Navbar(props: INavbarProps) {
               {/* <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" /> */}
               <Image
                 className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-                src=""
+                src="/nick.png"
                 alt="Profile Image"
                 width={180}
                 height={37}
