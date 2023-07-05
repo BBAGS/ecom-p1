@@ -42,7 +42,7 @@ function Carousel() {
   };
 
   return (
-    <div className=" min-w-full h-80 w-full m-auto relative group">
+    <div className="min-w-full h-80 w-full m-auto relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full bg-center bg-cover duration-500"
