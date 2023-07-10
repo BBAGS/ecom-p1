@@ -1,24 +1,26 @@
 import { motion } from "framer-motion";
-import { FC } from "react";
-
-import { styles } from "./styles";
 import { staggerContainer } from "../utils/motion";
+import { CSSProperties } from 'react';
 
-interface StarWrapperProps {
-  idName: string;
+interface Styles {
+  padding: CSSProperties;
 }
 
-const StarWrapper = (Component: FC, idName: string): FC<StarWrapperProps> => {
-  const HOC: FC<StarWrapperProps> = () => {
+const styles: Styles = {
+  padding: { /* define your styles here */ },
+};
+
+const StarWrapper = (Component: React.FC, idName: string) =>
+  function HOC() {
     return (
       <motion.section
         variants={staggerContainer()}
-        initial="hidden"
-        whileInView="show"
+        initial='hidden'
+        whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+        className={`${styles.padding} max-w-full relative z-0`}
       >
-        <span className="hash-span" id={idName}>
+        <span className='hash-span' id={idName}>
           &nbsp;
         </span>
 
@@ -26,8 +28,5 @@ const StarWrapper = (Component: FC, idName: string): FC<StarWrapperProps> => {
       </motion.section>
     );
   };
-
-  return HOC;
-};
 
 export default StarWrapper;
