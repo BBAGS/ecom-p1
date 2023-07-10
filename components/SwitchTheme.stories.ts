@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import SwitchTheme from './SwitchTheme';
 
 const meta: Meta<typeof SwitchTheme> = {
-  title: 'SwitchTheme',
+  title: 'Components/SwitchTheme',
   component: SwitchTheme,
   tags: ['autodocs'],
   argTypes: {
