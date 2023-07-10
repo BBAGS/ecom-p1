@@ -22,5 +22,5 @@ module.exports = {
       "dark"
     ],
   },
-  darkMode: 'class',
+  darkMode: ['class', '[data-theme="dark"]'],
 }

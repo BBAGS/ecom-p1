@@ -49,7 +49,7 @@ export default function Navbar(props: INavbarProps) {
             <div className="w-10 rounded-full">
               {/* <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" /> */}
               <Image
-                className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+                className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
                 src="/nick.png"
                 alt="Profile Image"
                 width={180}
