@@ -5,7 +5,7 @@ export interface INavbarProps {}
 
 export default function Navbar(props: INavbarProps) {
   return (
-    <div className="navbar bg-base-100 max-w-7xl m-auto">
+    <div className="navbar bg-base-100 max-w-7xl mx-auto p-4">
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl">Lentera Star</a>
       </div>

@@ -16,7 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="w-1/4 p-4">
       <motion.div
-        className="rounded overflow-hidden shadow-lg"
+        className="rounded-lg overflow-hidden shadow-lg"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
