@@ -56,12 +56,12 @@ function Carousel() {
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
       {/* Pagination */}
-      <div className="flex justify-center py-2 absolute bottom-0 left-0 right-0 mb-2">
+      <div className="flex justify-center py-2 absolute bottom-0 left-0 right-0 mb-2 z-50">
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer mx-1 text-white"
+            className={`text-2xl cursor-pointer mx-1 ${slideIndex === currentIndex ? 'text-white' : 'text-gray-400'}`}
           >
             <RxDotFilled />
           </div>
