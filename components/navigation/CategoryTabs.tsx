@@ -13,11 +13,11 @@ export default function CategoryTabs({
   onCategorySelect,
 }: CategoryTabsProps) {
   return (
-    <div className="flex overflow-x-auto sm:w-1/4 p-4">
+    <div className="flex flex-row sm:flex-col overflow-x-auto no-scrollbar">
       {categories.map((category) => (
         <motion.button
           key={null}
-          className={`block text-center w-20 py-2 px-4 rounded-lg m-1 ${
+          className={`text-center py-2 px-4 rounded-lg m-1 ${
             category === selectedCategory
               ? "bg-light-primary dark:bg-dark-primary text-white"
               : "bg-light-muted dark:bg-dark-muted text-black dark:text-white"
