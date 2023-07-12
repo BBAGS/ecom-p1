@@ -17,7 +17,7 @@ export default function CategoryTabs({
       {categories.map((category) => (
         <motion.button
           key={null}
-          className={`text-center py-2 px-4 rounded-lg m-1 ${
+          className={`text-center py-2 px-4 rounded-lg ${
             category === selectedCategory
               ? "bg-light-primary dark:bg-dark-primary text-white"
               : "bg-light-muted dark:bg-dark-muted text-black dark:text-white"
