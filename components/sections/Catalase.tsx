@@ -37,13 +37,13 @@ const Catalase = () => {
   const categories = ["All", "Category 1", "Category 2", "Category 3"]; // Replace with your actual categories
 
   return (
-    <section className="flex flex-col sm:flex-row max-w-7xl mx-auto dark:bg-gray-800">
+    <section className="flex flex-col sm:flex-row max-w-7xl mx-auto bg-light-muted dark:bg-dark-muted">
       <CategoryTabs
         categories={categories}
         selectedCategory={selectedCategory}
         onCategorySelect={setSelectedCategory}
       />
-      <div className="w-full sm:w-3/4 flex flex-wrap">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
         {products.map((product) => (
           <ProductCard key={product.title} product={product} />
         ))}
