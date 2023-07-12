@@ -13,16 +13,15 @@ export default function CategoryTabs({
   onCategorySelect,
 }: CategoryTabsProps) {
   return (
-    <div className="w-1/4 p-4">
+    <div className="flex overflow-x-auto sm:w-1/4 p-4">
       {categories.map((category) => (
         <motion.button
           key={null}
-          className={`block text-left w-full py-2 px-4 rounded-lg ${
+          className={`block text-center w-20 py-2 px-4 rounded-lg m-1 ${
             category === selectedCategory
-              ? "bg-blue-500 text-white"
-              : "dark:bg-slate-800 dark:text-[#a6adba] text-black"
+              ? "bg-light-primary dark:bg-dark-primary text-white"
+              : "bg-light-muted dark:bg-dark-muted text-black dark:text-white"
           }`}
-          style={{ margin: "0.5rem 0" }} // Add margin to create a gap
           onClick={() => onCategorySelect(category)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
