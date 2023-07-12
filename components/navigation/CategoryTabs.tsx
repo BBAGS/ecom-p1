@@ -41,7 +41,7 @@ export default function CategoryTabs({
                 category === selectedCategory
                   ? "bg-light-primary dark:bg-dark-primary text-white"
                   : "text-black dark:text-white"
-              } hover:scale-105 transition-transform block py-2 px-4 rounded-lg`}
+              }`}
               onClick={() => onCategorySelect(category)}
             >
               {category}
