@@ -16,11 +16,11 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="w-full p-2">
       <motion.div
-        className="rounded-lg overflow-hidden shadow-lg bg-light-muted dark:bg-dark-muted"
+        className="w-full rounded-lg overflow-hidden shadow-lg bg-light-muted dark:bg-dark-muted"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        <div className="relative h-0" style={{ paddingBottom: "75%" }}>
+        <div className="relative h-0 w-full" style={{ paddingBottom: "75%" }}>
           <Image
             fill
             src={product.image}
@@ -41,3 +41,4 @@ export default function ProductCard({ product }: ProductCardProps) {
     </div>
   );
 }
+
