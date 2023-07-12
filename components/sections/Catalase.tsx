@@ -37,7 +37,7 @@ const Catalase = () => {
   const categories = ["All", "Category 1", "Category 2", "Category 3"]; // Replace with your actual categories
 
   return (
-    <section className="flex flex-col sm:flex-row max-w-7xl mx-auto bg-light-muted dark:bg-dark-muted p-4">
+    <section className="flex flex-col sm:flex-row max-w-7xl mx-auto p-4">
       <CategoryTabs
         categories={categories}
         selectedCategory={selectedCategory}
