@@ -13,15 +13,14 @@ export default function CategoryTabs({
 }: CategoryTabsProps) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  // Function to check screen size and update state accordingly
-  const handleResize = () => {
-    setIsSmallScreen(window.innerWidth < 640);
-  };
-
-  // Add event listener on component mount to track screen size changes
   useEffect(() => {
-    handleResize();
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 640);
+    };
+
+    handleResize(); // Initialize the state with the initial screen size
     window.addEventListener("resize", handleResize);
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
