@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import SwitchTheme from './SwitchTheme';
+import type { Meta, StoryObj } from "@storybook/react";
+import SwitchTheme from "./SwitchTheme";
 
 const meta: Meta<typeof SwitchTheme> = {
-  title: 'Components/SwitchTheme',
+  title: "Components/SwitchTheme",
   component: SwitchTheme,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
     backgroundColor: {
-      control: 'color',
+      control: "color",
     },
   },
 };
@@ -18,6 +18,6 @@ type Story = StoryObj<typeof SwitchTheme>;
 export const Default: Story = {
   args: {
     primary: true,
-    label: 'SwitchTheme',
+    label: "SwitchTheme",
   },
 };

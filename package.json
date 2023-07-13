@@ -38,6 +38,8 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "daisyui": "^3.1.6",
     "eslint-plugin-storybook": "^0.6.12",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.0",
     "storybook": "^7.0.23"
   }
 }
