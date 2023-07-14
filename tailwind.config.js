@@ -29,7 +29,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui"), require("prettier-plugin-tailwindcss")], require("@tailwindcss/container-queries"),
+  plugins: [require("daisyui"), require("prettier-plugin-tailwindcss")],
   daisyui: {
     themes: [
       "light",
