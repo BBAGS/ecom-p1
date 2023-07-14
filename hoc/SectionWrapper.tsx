@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import { staggerContainer } from "../utils/motion";
-import { CSSProperties } from "react";
+import { motion } from 'framer-motion';
+import { staggerContainer } from '../utils/motion';
+import { CSSProperties } from 'react';
 
 interface Styles {
   padding: CSSProperties;
@@ -17,12 +17,12 @@ const SectionWrapper = (Component: React.FC, idName: string) =>
     return (
       <motion.section
         variants={staggerContainer()}
-        initial="hidden"
-        whileInView="show"
+        initial='hidden'
+        whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.padding} max-w-full relative z-0`}
+        className={`${styles.padding} relative z-0 max-w-full`}
       >
-        <span className="hash-span" id={idName}>
+        <span className='hash-span' id={idName}>
           &nbsp;
         </span>
 

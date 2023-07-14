@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import Carousel from "./Carousel";
+import type { Meta, StoryObj } from '@storybook/react';
+import Carousel from './Carousel';
 
 const meta: Meta<typeof Carousel> = {
-  title: "Components/Carousel",
+  title: 'Components/Carousel',
   component: Carousel,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     backgroundColor: {
-      control: "color",
+      control: 'color',
     },
   },
 };
@@ -19,6 +19,6 @@ type Story = StoryObj<typeof Carousel>;
 export const Default: Story = {
   args: {
     primary: true,
-    label: "Carousel",
+    label: 'Carousel',
   },
 };

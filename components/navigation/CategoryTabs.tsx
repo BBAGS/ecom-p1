@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Category } from "../sections/Catalase";
+import { useState, useEffect } from 'react';
+import { Category } from '../sections/Catalase';
 
 type CategoryTabsProps = {
   categories: Category[];
@@ -20,44 +20,44 @@ export default function CategoryTabs({
     };
 
     handleResize(); // Initialize the state with the initial screen size
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   return (
-    <div className="w-full">
+    <div className='w-full'>
       <ul
         className={`menu ${
-          isSmallScreen ? "" : "menu-horizontal"
-        } bg-base-200 rounded-box flex flex-row sm:flex-col`}
+          isSmallScreen ? '' : 'menu-horizontal'
+        } rounded-box flex flex-row bg-base-200 sm:flex-col`}
       >
         {categories.map((category, index) => (
           <li
             key={category.name}
             className={`mb-0 sm:mb-2 ${
-              index !== categories.length - 1 ? "mr-2 sm:mr-0" : ""
+              index !== categories.length - 1 ? 'mr-2 sm:mr-0' : ''
             }`}
           >
             <a
               className={`${
-                category.name === selectedCategory ? "active" : ""
+                category.name === selectedCategory ? 'active' : ''
               }`}
               onClick={() => onCategorySelect(category.name)}
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
                 strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
+                stroke='currentColor'
+                className='h-6 w-6'
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                   d={category.path}
                 />
               </svg>
